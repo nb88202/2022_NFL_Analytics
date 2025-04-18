@@ -13,8 +13,8 @@ games_data: pathlib.Path = DATA_DIR.joinpath("games.csv")
 
 df = pd.read_csv(games_data)
 
-df_new = df[['week', 'homeTeamAbbr', 'homeFinalScore', 'visitorTeamAbbr', 'visitorFinalScore']]
-df_new['Home_winner'] = np.where(df_new['homeFinalScore']>df_new['visitorFinalScore'], 'Y', 'N')
+df_new = df[['gameId','week', 'homeTeamAbbr', 'homeFinalScore', 'visitorTeamAbbr', 'visitorFinalScore']]
+df_new['Home_winner'] = np.where(df_new['homeFinalScore']>df_new['visitorFinalScore'], True, False)
 df_new['tie']=np.where(df_new['homeFinalScore']==df_new['visitorFinalScore'],'T','')
 
 df_new['Winner'] = np.where(df_new['Home_winner']=='Y',df_new['homeTeamAbbr'], df_new['visitorTeamAbbr'])

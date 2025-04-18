@@ -18,5 +18,7 @@ Fact tables include:
    All work will be imported and created in PowerBI
 
 ## Workflow and Logic
-   Import raw csv into PowerBI.  Perform aggregation, slicing, dicing, drilldown using PowerBI.
+   Cleaning csv files includes Games_cleaning.py  ->  remove unnecessary columns while adding new columns of home_winner (bool), Id of game winner and Id of loser for summary later. 
+
+   Cleaning players.csv -> remove 
 
