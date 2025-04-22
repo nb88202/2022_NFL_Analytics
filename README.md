@@ -5,6 +5,8 @@ This project will analyze 2022 NFL Data in order to extract insights on player p
 
 ## Data Source
 
+Data is taken from Kaggle Nfl data analytics competition.  Which gives only the first 9 weeks of data for the season.
+
 Dimension tables include:
    Games.csv [gameId, season, week, gameDate, gameTime, visitorTeam, homeTeam, homeFinalScore, visitorFinalScore]
    Players.csv [nflId, height, weight, birthDate, collegeName, position, displayName]
@@ -30,9 +32,13 @@ Fact tables include:
 
 ![alt text](images/dm.png)
 
-   3. Extract Teams data in PowerBI  with slicers for each team and each week (Overview)
+   3. Extract Teams Win Loss data in PowerBI  with slicers for each team and each week (Overview)
 
 ![alt text](images/te.png)
+
+Here you can see the wins by Atlanta, their opponent, and the weeks of wins --- todo- add score
+
+![alt text](images/atl.png)
 
 Extract team data by yards gained per game against opponent for each team, slicer by team and by quarter of game(Offense Team Data) ---todo - add score and win or loss to each bar
 
@@ -43,6 +49,8 @@ Extract team data by yards gained per game against opponent for each team, slice
 Extract Offensive Player data with slicers by team. 
 
 ![alt text](images/op.png)
+
+Here is the sliced offensive data for Buffalo  
 
 ![alt text](images/op1.png)
    
