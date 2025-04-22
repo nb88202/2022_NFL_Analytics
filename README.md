@@ -18,7 +18,19 @@ Fact tables include:
    All work will be imported and created in PowerBI
 
 ## Workflow and Logic
+   
+   1. Clean and create tables.
    Cleaning csv files includes Games_cleaning.py  ->  remove unnecessary columns while adding new columns of home_winner (bool), Id of game winner and Id of loser for summary later. 
 
-   Cleaning players.csv -> remove 
+   Cleaning players.csv -> remove unnecessary columns
+
+   Create new tables in PowerBi using DAX 
+
+   2. Set up a Data Model in PowerBi
+
+   ![alt text](images/dm.png)
+
+   
+
+   
 
