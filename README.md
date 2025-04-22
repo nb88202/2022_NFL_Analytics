@@ -34,11 +34,11 @@ Fact tables include:
 
 ![alt text](images/te.png)
 
-      Extract team data by yards gained per game against oppononent for each team, slicer by team and by quarter of game(Offense Team Data) ---todo - add score and win or loss to each bar
+Extract team data by yards gained per game against oppononent for each team, slicer by team and by quarter of game(Offense Team Data) ---todo - add score and win or loss to each bar
 
 ![alt text](images/slice.png)
    
-      Extract Offensive Player dtaa with slicers by team. 
+Extract Offensive Player dtaa with slicers by team. 
 
 ![alt text](images/op.png)
 
