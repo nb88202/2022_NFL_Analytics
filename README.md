@@ -22,15 +22,26 @@ Fact tables include:
    1. Clean and create tables.
    Cleaning csv files includes Games_cleaning.py  ->  remove unnecessary columns while adding new columns of home_winner (bool), Id of game winner and Id of loser for summary later. 
 
-   Cleaning players.csv -> remove unnecessary columns
+      Cleaning players.csv -> remove unnecessary columns
 
-   Create new tables in PowerBi using DAX 
+      Create new tables in PowerBi using DAX 
 
    2. Set up a Data Model in PowerBi
 
-   ![alt text](images/dm.png)
+![alt text](images/dm.png)
 
+   3. Extract Teams data in PowerBI  with slicers for each team and each week (Overview)
+
+![alt text](images/te.png)
+
+      Extract team data by yards gained per game against oppononent for each team, slicer by team and by quarter of game(Offense Team Data) ---todo - add score and win or loss to each bar
+
+![alt text](images/slice.png)
    
+      Extract Offensive Player dtaa with slicers by team. 
 
+![alt text](images/op.png)
+
+![alt text](images/op1.png)
    
 
