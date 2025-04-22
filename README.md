@@ -41,7 +41,7 @@ Extract Teams Win Loss data in PowerBI  with slicers for each team and each week
 
 ![alt text](images/te.png)
 
-Here you can see the wins by Atlanta, their opponent, and the weeks of wins --- todo- add score
+Here you can see the wins by Atlanta, their opponent, and the weeks of wins --- todo- add team scores. 
 
 ![alt text](images/atl.png)
 
@@ -57,7 +57,7 @@ Extract Offensive Player data with slicers by team.
 
 Here is the sliced offensive data for Buffalo  
 
-![alt text](images/op1.png)
+![alt text](images/buf.png)
    
 ## Suggested Business Actions
 
@@ -68,3 +68,8 @@ This dashboard was created as a tool for quick insights for anyone interested in
 <li>Examining the performance of certain players in different offensive formations.</li>
 <li>Determining the pattern of performance in home games vs away games.</li>
 </ul>
+
+
+## Ethical Considerations
+
+All data is publicly available. There are no concerns about making this publicly available.
