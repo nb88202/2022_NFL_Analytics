@@ -1,11 +1,11 @@
 # 2022_NFL_Analytics
 
 ## Business Goal
-This project will analyze 2022 NFL Data in order to extract insights on player performance generally and among specific players.
+This project will analyze 2022 NFL Data in order to extract insights on team and player performance.
 
 ## Data Source
 
-Data is taken from Kaggle Nfl data analytics competition.  Which gives only the first 9 weeks of data for the season.
+Data is taken from Kaggle NFL data analytics competition. Only the first 9 weeks of seasonal data is provided.
 
 Dimension tables include:
    Games.csv [gameId, season, week, gameDate, gameTime, visitorTeam, homeTeam, homeFinalScore, visitorFinalScore]
@@ -17,22 +17,27 @@ Fact tables include:
    Tackles.csv [gameId, playId,nflId, tackle, assist, forcedFumble,pff_missedTackle ]
 
 ## Tools Used
-   All work will be imported and created in PowerBI
+   All work will be in Python for cleaning of tables and PowerBI for analysis.
 
 ## Workflow and Logic
    
-   1. Clean and create tables.
+#### Clean and create tables
    Cleaning csv files includes Games_cleaning.py  ->  remove unnecessary columns while adding new columns of home_winner (bool), Id of game winner and Id of loser for summary later. 
 
-      Cleaning players.csv -> remove unnecessary columns
+   Cleaning players.csv is done in Players_cleaning.py -> remove unnecessary columns
 
-      Create new tables in PowerBi using DAX 
+   Cleaning plays.csv done in Plays_cleaning.py -> Remove unnecessary columns  
 
-   2. Set up a Data Model in PowerBi
+   Create new tables in PowerBi using DAX 
+
+
+#### Import and Set up a Data Model in PowerBi
 
 ![alt text](images/dm.png)
 
-   3. Extract Teams Win Loss data in PowerBI  with slicers for each team and each week (Overview)
+## Results
+
+Extract Teams Win Loss data in PowerBI  with slicers for each team and each week (Overview)
 
 ![alt text](images/te.png)
 
@@ -54,4 +59,12 @@ Here is the sliced offensive data for Buffalo
 
 ![alt text](images/op1.png)
    
+## Suggested Business Actions
 
+This dashboard was created as a tool for quick insights for anyone interested in NFL analytics.  It is meant to be used to compare seasonal data across multiple seasons with similar dashboards.  While it is possible to use the dashboard slicers to derive information for each team and compare them.  Possible business actions could include
+
+<ul>
+<li>Trading the least performing players on offense.</li>
+<li>Examining the performance of certain players in different offensive formations.</li>
+<li>Determining the pattern of performance in home games vs away games.</li>
+</ul>
